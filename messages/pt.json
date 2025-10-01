@@ -1,0 +1,20 @@
+{
+  "profile": {
+    "name": "Guilherme Guerzoni",
+    "title": "Engenheiro Full Stack Sênior",
+    "education": "Bacharel em Ciência da Computação",
+    "experience": "+9 anos de experiência",
+    "exploreWork": "Explore meu trabalho"
+  },
+  "sections": {
+    "projects": "Projetos",
+    "timeline": "Linha do Tempo"
+  },
+  "social": {
+    "github": "Perfil do GitHub",
+    "linkedin": "Perfil do LinkedIn"
+  },
+  "nav": {
+    "languageSelection": "Seleção de idioma"
+  }
+}

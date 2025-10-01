@@ -1,0 +1,20 @@
+{
+  "profile": {
+    "name": "Guilherme Guerzoni",
+    "title": "Senior Full Stack Engineer",
+    "education": "Bachelor in Computer Science",
+    "experience": "+9 years of experience",
+    "exploreWork": "Explore my work"
+  },
+  "sections": {
+    "projects": "Projects",
+    "timeline": "Timeline"
+  },
+  "social": {
+    "github": "GitHub profile",
+    "linkedin": "LinkedIn profile"
+  },
+  "nav": {
+    "languageSelection": "Language selection"
+  }
+}
