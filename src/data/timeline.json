@@ -2,91 +2,205 @@
   {
     "jobTitle": "Senior Frontend Engineer",
     "company": "Qatar Development Bank",
-    "startDate": "Ago 2024",
-    "endDate": "",
-    "description": [],
-    "technologies": [],
+    "startDate": "Aug 2024",
+    "endDate": "Oct 2025",
+    "descriptionEn": [
+      "Worked on national‑scale projects integrated with Qatari ministries, delivering frontend features and Node.js services for both client‑ and bank‑side platforms.",
+      "Responsible for the e2e JS/TS stack: internal libraries, shared component library and production UI components used across teams.",
+      "Implemented strict error handling, validation and progressive UX for loan application flows, document upload/verification and multi-step processes to meet regulatory and bank integration requirements.",
+      "Built UI and client-side logic for complex major banks integration, supporting multiple roles and actions with clear feedback and fast response.",
+      "Collaborate closely with product, design, backend and security teams to ensure UI/UX consistency, accessibility and compliance for national-scale projects."
+    ],
+    "descriptionBr": [
+      "Trabalhei em projetos em escala nacional integrados com ministérios do Catar, entregando funcionalidades frontend e serviços Node.js para plataformas tanto do cliente quanto do banco.",
+      "Responsável pela stack JS/TS de ponta a ponta: bibliotecas internas, biblioteca de componentes compartilhada e componentes de UI de produção usados por várias equipes.",
+      "Implementei tratamento rigoroso de erros, validação e UX progressiva para fluxos de solicitação de empréstimo, upload/verificação de documentos e processos multi‑etapa para atender requisitos regulatórios e de integração bancária.",
+      "Construí a UI e a lógica no cliente para integrações complexas com grandes bancos, suportando múltiplos papéis e ações com feedback claro e resposta rápida.",
+      "Colaborei de perto com produto, design, backend e equipes de segurança para garantir consistência de UI/UX, acessibilidade e conformidade em projetos de escala nacional."
+    ],
+    "technologies": [
+      "TypeScript",
+      "JavaScript",
+      "Next.js",
+      "Tailwind",
+      "Ant Design",
+      "Context",
+      "Redux",
+      "Redux-Saga",
+      "Jest",
+      "React Testing Library",
+      "Cypress",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "PostgreSQL"
+    ],
     "location": "Remote",
     "type": "full-time"
   },
   {
     "jobTitle": "Software Engineer Team Lead",
-    "company": "Grand Parade - William Hills",
-    "startDate": "Feb 2024",
+    "company": "Grand Parade - William Hill",
+    "startDate": "Jan 2024",
     "endDate": "Oct 2024",
-    "description": [],
-    "technologies": [],
-    "location": "Hybrid",
+    "descriptionEn": [
+      "Led two cross-functional teams during product sunsetting and migration; work focused on payments, KYC and compliance.",
+      "Managed a product team (7: 2 SDET, 3 backend C#, 2 JS/TS) and a backend-focused team (9: 2 SDET, 4 backend Java, 2 JS/TS).",
+      "Coordinated the sunsetting roadmap for payment and KYC systems: phased cutovers, monitoring, rollback plans and compliance checks to reduce user impact for the migration.",
+      "Ran 1:1, performance reviews and career planning; coordinated with product, legal and operations for compliant execution."
+    ],
+    "descriptionBr": [
+      "Liderei duas equipes multifuncionais durante o sunsetting e migração de produto; o trabalho focou em pagamentos, KYC e conformidade.",
+      "Gerenciei uma equipe de produto (7: 2 SDET, 3 backend C#, 2 JS/TS) e uma equipe focada em backend (9: 2 SDET, 4 backend Java, 2 JS/TS).",
+      "Coordenei o roadmap de sunsetting para sistemas de pagamento e KYC: cortes em fases, monitoramento, planos de rollback e checagens de conformidade para reduzir impacto aos usuários durante a migração.",
+      "Conduzi 1:1, avaliações de desempenho e planejamento de carreira; coordenei com produto, jurídico e operações para execução em conformidade."
+    ],
+    "technologies": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "AngularJS",
+      "Redux",
+      "Redux-Saga",
+      "NgRx",
+      "RxJS",
+      "Material-UI",
+      "Jest",
+      "Cypress",
+      "Node.js",
+      "MongoDB",
+      "MSSQL",
+      "C#",
+      "Java",
+      "Splunk"
+    ],
+    "location": "Krakow, Poland, Remote/Hybrid",
     "type": "full-time"
   },
   {
     "jobTitle": "Senior Frontend Engineer",
-    "company": "Grand Parade - William Hills",
-    "startDate": "Ago 2020",
-    "endDate": "Feb 2024",
-    "description": [],
-    "technologies": [],
-    "location": "Remote",
+    "company": "Grand Parade - William Hill",
+    "startDate": "Aug 2020",
+    "endDate": "Jan 2024",
+    "descriptionEn": [
+      "Led frontend design and implementation of the new payments system for “Mr Green”, a core company brand handling high-volume payment flows (>100,000 payment events/month).",
+      "Maintained and enhanced integrations with third‑party providers for player identification, KYC and fraud detection; implemented robust client-side flows for document upload, verification feedback and retry handling.",
+      "Ensured secure and compliant handling of player identification and transactions: implemented secure token flows, input validation, and client-side hardening to reduce fraud surface and support regulatory requirements.",
+      "Owned the KYC user experience e2e: built progressive verification flows, clear UX for verification states, and error handling that reduced manual intervention and improved conversion for KYC checks."
+    ],
+    "descriptionBr": [
+      "Liderei o design frontend e a implementação do novo sistema de pagamentos para “Mr Green”, uma marca central da empresa que lida com fluxos de pagamento de alto volume (>100.000 eventos de pagamento/mês).",
+      "Mantive e melhorei integrações com provedores terceiros para identificação de jogadores, KYC e detecção de fraude; implementei fluxos robustos no cliente para upload de documentos, feedback de verificação e tratamento de retries.",
+      "Assegurei o tratamento seguro e conforme da identificação de jogadores e transações: implementei fluxos de token seguros, validação de entrada e hardening no cliente para reduzir superfície de fraude e suportar requisitos regulatórios.",
+      "Fui responsável pela experiência de usuário KYC end-to-end: construí fluxos de verificação progressiva, UX clara para estados de verificação e tratamento de erros que reduziram intervenção manual e melhoraram conversão nas checagens de KYC."
+    ],
+    "technologies": [
+      "JavaScript",
+      "TypeScript",
+      "AngularJS",
+      "React",
+      "Redux",
+      "Context",
+      "CSS Modules",
+      "Angular",
+      "NgRx",
+      "RxJS",
+      "Material-UI",
+      "Jasmine",
+      "Cypress",
+      "Node.js",
+      "Express.js/Fastify",
+      "MongoDB",
+      "Splunk"
+    ],
+    "location": "Krakow, Poland, Remote/Hybrid",
     "type": "full-time"
   },
   {
     "jobTitle": "Senior Backend Engineer",
-    "company": "Sysmap",
+    "company": "SysMap",
     "startDate": "Jul 2020",
     "endDate": "Sep 2021",
-    "description": [],
-    "technologies": [],
-    "location": "Remote",
+    "descriptionEn": [
+      "Worked at SysMap as a consultant for Natura &Co (client), co‑leading backend architecture and implementation for a reseller/mobile platform.",
+      "Designed and delivered scalable APIs consumed by Natura’s mobile app, with clear contracts, pagination and consistent error handling to simplify frontend work.",
+      "Implemented offline/online sync and order‑sync routines, supporting thousands of daily transactions.",
+      "Reworked caching and I/O paths to reduce latency and improve throughput; reduced API p95 latency from 820ms to 570ms (30%) and increased peak throughput from 120 RPS to 160 RPS (+33%).",
+      "Performed code reviews, removed bottlenecks and worked closely with frontend/app teams to ensure smooth integrations and a better user experience for consultants."
+    ],
+    "descriptionBr": [
+      "Atuei na SysMap como consultor para a Natura &Co (cliente), co‑liderando a arquitetura backend e implementação para uma plataforma de revendedor/mobile.",
+      "Projetei e entreguei APIs escaláveis consumidas pelo app móvel da Natura, com contratos claros, paginação e tratamento consistente de erros para simplificar o trabalho do frontend.",
+      "Implementei rotinas de sincronização offline/online e de sincronização de pedidos, suportando milhares de transações diárias.",
+      "Reestruturei caching e caminhos de I/O para reduzir latência e melhorar throughput; reduzi a latência p95 da API de 820ms para 570ms (30%) e aumentei o throughput de pico de 120 RPS para 160 RPS (+33%).",
+      "Realizei revisões de código, removi gargalos e trabalhei próximo às equipes de frontend/app para garantir integrações suaves e melhor experiência para os consultores."
+    ],
+    "technologies": [
+      "TypeScript",
+      "Node.js",
+      "NestJS",
+      "Fastify",
+      "MongoDB",
+      "PostgreSQL",
+      "TypeORM",
+      "Redis",
+      "Elasticsearch",
+      "Jest",
+      "SonarQube"
+    ],
+    "location": "São Paulo, Brazil, On-site/Remote",
     "type": "part-time"
   },
   {
     "jobTitle": "Senior Frontend Engineer",
-    "company": "Sysmap",
+    "company": "SysMap",
     "startDate": "Jul 2019",
     "endDate": "Feb 2020",
-    "description": [],
-    "technologies": [],
-    "location": "On-site",
+    "descriptionEn": [
+      "Frontend improvements for Superbid’s (client) auction platform, shipped features, improved performance and raised accessibility standards.",
+      "Reworked key auction pages to reduce bundle size and render time; added component stories (Storybook) and unit tests to improve reliability and developer experience.",
+      "Implemented semantic HTML and ARIA attributes to improve accessibility and SEO-friendly markup."
+    ],
+    "descriptionBr": [
+      "Melhorias frontend para a plataforma de leilões da Superbid (cliente): entreguei funcionalidades, melhorei performance e elevei os padrões de acessibilidade.",
+      "Reformulei páginas chave de leilão para reduzir tamanho do bundle e tempo de render; adicionei histórias de componentes (Storybook) e testes unitários para melhorar confiabilidade e experiência do desenvolvedor.",
+      "Implementei HTML semântico e atributos ARIA para melhorar acessibilidade e marcação amigável a SEO."
+    ],
+    "technologies": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Redux",
+      "Redux-Saga",
+      "Yup",
+      "Formik",
+      "Material-UI",
+      "SASS",
+      "Jest",
+      "React Testing Library",
+      "a11y",
+      "Analytics"
+    ],
+    "location": "São Paulo, Brazil, On-site/Remote",
     "type": "full-time"
   },
   {
     "jobTitle": "Frontend Engineer",
     "company": "Sovos",
     "startDate": "Feb 2019",
-    "endDate": "Jul 2019",
-    "description": [],
-    "technologies": [],
-    "location": "On-site",
-    "type": "full-time"
-  },
-  {
-    "jobTitle": "Fullstack Engineer",
-    "company": "Lunes",
-    "startDate": "Apr 2018",
-    "endDate": "Feb 2019",
-    "description": [],
-    "technologies": [],
-    "location": "On-site",
-    "type": "full-time"
-  },
-  {
-    "jobTitle": "Fullstack Web Developer",
-    "company": "Freelancer",
-    "startDate": "Sep 2015",
-    "endDate": "Apr 2018",
-    "description": [],
-    "technologies": [],
-    "location": "",
-    "type": "freelance"
-  },
-  {
-    "jobTitle": "IT Analyst",
-    "company": "Fremix Pavimentação de Construção",
-    "startDate": "Jun 2015",
-    "endDate": "Sep 2017",
-    "description": [],
-    "technologies": [],
-    "location": "On-site",
+    "endDate": "Aug 2019",
+    "descriptionEn": [
+      "Built frontend features for a B2B beverage compliance and logistics solution; work involved pilot-level integrations with FedEx-related workflows.",
+      "Implemented real-time tax-validation UI and error handling to reduce manual compliance exceptions during pilots.",
+      "Conducted weekly JS/React sessions for the local backend teams and junior developers to share practical frontend practices."
+    ],
+    "descriptionBr": [
+      "Desenvolvi funcionalidades frontend para uma solução B2B de conformidade e logística de bebidas; o trabalho envolveu integrações em piloto com workflows relacionados à FedEx.",
+      "Implementei UI de validação fiscal em tempo real e tratamento de erros para reduzir exceções de conformidade manuais durante os pilotos.",
+      "Conduzi sessões semanais de JS/React para as equipes backend locais e desenvolvedores juniores para compartilhar práticas frontend práticas."
+    ],
+    "technologies": ["JavaScript", "React", "Redux", "Redux-Saga", "Material-UI", "Jest", "Enzyme"],
+    "location": "São Paulo, Brazil, On-Site",
     "type": "full-time"
   }
 ]

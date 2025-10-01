@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import Section from "@/components/section/section";
 import Timeline from "@/components/timeline/timeline";
@@ -10,15 +10,16 @@ import { ITimeline } from "@/types/timeline";
 
 export default function Home() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <main className="mx-auto max-w-screen-lg">
       <header className="text-md h-12 w-full font-bold uppercase">
         <nav aria-label={t("nav.languageSelection")} className="flex justify-end gap-2">
-          <Link href="/" locale="en" lang="en">
+          <Link href="/" locale="en" lang="en" className={locale === "en" ? "text-accent" : ""}>
             EN
           </Link>
-          <Link href="/" locale="pt" lang="pt">
+          <Link href="/" locale="pt" lang="pt" className={locale === "pt" ? "text-accent" : ""}>
             PT
           </Link>
         </nav>
@@ -43,7 +44,7 @@ export default function Home() {
               <h1 className="text-primary text-3xl font-bold">{t("profile.name")}</h1>
               <p className="text-highlight text-xl">{t("profile.title")}</p>
               <p className="text-lg">{t("profile.education")}</p>
-              <p className="text-lg">{t("profile.experience")}</p>
+              <p className="text-lg text-accent">{t("profile.experience")}</p>
 
               <nav className="mt-2 flex justify-center gap-4 md:justify-start" aria-label="Social media links">
                 <Link
@@ -80,7 +81,7 @@ export default function Home() {
 
         <Section title={t("sections.projects")}>
           <div className="flex items-center justify-center">
-            <span className="text-secondary text-8xl font-bold">SOON</span>
+            <span className="text-secondary text-5xl font-bold">Working on it...</span>
           </div>
         </Section>
 

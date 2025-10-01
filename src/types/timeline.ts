@@ -3,7 +3,8 @@ export interface ITimeline {
   company: string;
   startDate: string;
   endDate: string;
-  description: string[];
+  descriptionEn: string[];
+  descriptionBr: string[];
   technologies: string[];
   location: string;
   type: "part-time" | "full-time" | "freelance" | "education";

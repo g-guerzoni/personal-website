@@ -1,51 +1,48 @@
-import React from "react";
+"use client";
 
+import React, { useState } from "react";
+
+import { useLocale } from "next-intl";
+
+import { Nullable } from "@/types/global";
 import { ITimeline } from "@/types/timeline";
 
+import JobTitleItem from "./jobTitleItem";
+
 const Timeline: React.FC<{ items: ITimeline[] }> = ({ items }) => {
+  const [selectedItem, setSelectedItem] = useState<Nullable<ITimeline>>(null);
+  const locale = useLocale();
+
+  const getDescription = (item: ITimeline): string[] => {
+    return locale === "pt" ? item.descriptionBr : item.descriptionEn;
+  };
+
   return (
-    <ol className="list-none" role="list" aria-label="Professional experience timeline">
-      {items.map((item, index) => (
-        <li
-          key={`${item.company}-${item.jobTitle}`}
-          className="grid grid-cols-1 justify-start md:grid-cols-[68px_40px_1fr]"
-        >
-          <div className="flex items-center justify-start gap-2 md:-mt-1 md:flex-col md:items-start md:justify-start">
-            <time className="text-sm" dateTime={item.endDate || new Date().toISOString().split("T")[0]}>
-              {item.endDate || "Current"}
-            </time>
-            <div className="bg-secondary block h-1 w-1 md:mt-2 md:hidden" aria-hidden="true" />
-            <time className="text-sm" dateTime={item.startDate}>
-              {item.startDate}
-            </time>
-          </div>
-
-          <div className="hidden md:block" aria-hidden="true">
-            <div className="flex-col items-center justify-items-center">
-              <div className={`${index === 0 ? "bg-highlight" : "bg-text"} h-4 w-4 rounded-full`} />
-              <div className={`bg-secondary h-[60px] w-1 ${index === items.length - 1 ? "hidden" : ""}`} />
-            </div>
-          </div>
-
-          <article className="flex flex-col items-start md:-mt-1">
-            <h3 className="text-highlight text-base font-bold md:text-text">{item.company}</h3>
-            <p className="text-accent text-sm font-semibold">{item.jobTitle}</p>
-
-            <div className="mb-4 flex items-center gap-2 md:mb-0">
-              {item.location && (
-                <address className="text-xs not-italic" aria-label="Work location">
-                  {item.location}
-                </address>
+    <div className="grid grid-cols-1 lg:grid-cols-2">
+      <JobTitleItem items={items} onSelectItem={setSelectedItem} />
+      <aside className="hidden flex-col gap-4 overflow-hidden lg:flex" aria-label="Job details">
+        {selectedItem && (
+          <section aria-live="polite">
+            <ul key={selectedItem.company + selectedItem.jobTitle} className="animate-fade-in flex flex-col gap-4">
+              {getDescription(selectedItem).map((description) => (
+                <li key={description} className="flex items-start gap-4">
+                  <span className="bg-secondary mt-2 h-2 w-2 shrink-0 rounded-full" aria-hidden="true" />
+                  <span>{description}</span>
+                </li>
+              ))}
+              {selectedItem.technologies.length > 0 && (
+                <li className="flex items-start gap-4 text-highlight">
+                  <span className="bg-secondary mt-2 h-2 w-2 shrink-0 rounded-full" aria-hidden="true" />
+                  <span>
+                    <strong className="text-accent">Tech:</strong> {selectedItem.technologies.join(", ")}
+                  </span>
+                </li>
               )}
-              {item.location && <div className="bg-secondary h-1 w-1" aria-hidden="true" />}
-              <span className="text-xs capitalize" aria-label="Employment type">
-                {item.type}
-              </span>
-            </div>
-          </article>
-        </li>
-      ))}
-    </ol>
+            </ul>
+          </section>
+        )}
+      </aside>
+    </div>
   );
 };
 
