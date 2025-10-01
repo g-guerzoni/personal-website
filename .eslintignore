@@ -1,0 +1,14 @@
+node_modules/**
+.next/**
+.husky/**
+*.config.js
+*.config.ts
+.eslintrc.js
+.prettierrc
+.prettierignore
+.husky/
+.vscode/
+.DS_Store
+coverage/**
+dist/**
+build/**
