@@ -43,56 +43,7 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
-    "import/order": [
-      "error",
-      {
-        groups: [["builtin", "external"], "internal", ["parent", "sibling"], "index", "type"],
-        pathGroups: [
-          {
-            pattern: "react",
-            group: "external",
-            position: "before",
-          },
-          {
-            pattern: "next/**",
-            group: "external",
-            position: "before",
-          },
-          {
-            pattern: "@/types/**",
-            group: "internal",
-            position: "before",
-          },
-          {
-            pattern: "@/utils/**",
-            group: "internal",
-            position: "before",
-          },
-          {
-            pattern: "@/components/**",
-            group: "internal",
-            position: "before",
-          },
-          {
-            pattern: "@/app/**",
-            group: "internal",
-            position: "before",
-          },
-          {
-            pattern: "@/**",
-            group: "internal",
-            position: "before",
-          },
-        ],
-        pathGroupsExcludedImportTypes: ["react", "next"],
-        "newlines-between": "always",
-        distinctGroup: false,
-        alphabetize: {
-          order: "asc",
-          caseInsensitive: true,
-        },
-      },
-    ],
+    "import/order": "off",
   },
   ignorePatterns: ["node_modules/**", ".next/**", "*.config.js", "*.config.ts", ".eslintrc.js"],
 };

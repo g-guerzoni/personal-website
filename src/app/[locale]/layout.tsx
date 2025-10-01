@@ -1,13 +1,13 @@
 import { Roboto_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
+
 import { Analytics } from "@vercel/analytics/next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
-import { routing } from "@/i18n/routing";
-
 import "@/css/arrow.css";
 import "@/css/globals.css";
+import { routing } from "@/i18n/routing";
 
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
@@ -35,10 +35,8 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${robotoMono.variable} font-mono antialiased p-8`}>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+      <body className={`${robotoMono.variable} p-8 font-mono antialiased`}>
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
         <Analytics />
       </body>
     </html>

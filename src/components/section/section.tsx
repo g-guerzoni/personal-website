@@ -11,8 +11,8 @@ const Section: React.FC<ISectionProps> = ({ children, rootClassName, childrenCla
   return (
     <section className={`${rootClassName} flex flex-col gap-4`} aria-label={title}>
       <header className="flex items-center justify-between gap-4">
-        <h2 className="text-text whitespace-nowrap text-xl font-bold">{title}</h2>
-        <div className="bg-secondary h-1 w-full mt-1" role="presentation" aria-hidden="true"></div>
+        <h2 className="text-text text-xl font-bold whitespace-nowrap">{title}</h2>
+        <div className="bg-secondary mt-1 h-1 w-full" role="presentation" aria-hidden="true"></div>
       </header>
       <div className={childrenClassName}>{children}</div>
     </section>
