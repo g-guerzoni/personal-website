@@ -39,10 +39,10 @@ export default function Home() {
             <p className="text-lg">{t("profile.experience")}</p>
 
             <nav className="mt-2 flex justify-center gap-4 md:justify-start" aria-label="Social media links">
-              <Link href="https://github.com/guerzoni" className="h-8 w-8" aria-label={t("social.github")}>
+              <Link href="https://github.com/g-guerzoni" className="h-8 w-8" aria-label={t("social.github")}>
                 <Image src="/assets/icons/github.svg" alt="" width={32} height={32} />
               </Link>
-              <Link href="https://linkedin.com/in/guerzoni" className="h-8 w-8" aria-label={t("social.linkedin")}>
+              <Link href="https://www.linkedin.com/in/guilherme-guerzoni" className="h-8 w-8" aria-label={t("social.linkedin")}>
                 <Image src="/assets/icons/linkedin.svg" alt="" width={32} height={32} />
               </Link>
             </nav>
