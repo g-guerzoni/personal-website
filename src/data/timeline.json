@@ -3,7 +3,7 @@
     "jobTitle": "Senior Frontend Engineer",
     "company": "Qatar Development Bank",
     "startDate": "Aug 2024",
-    "endDate": "Oct 2025",
+    "endDate": "",
     "descriptionEn": [
       "Worked on national‑scale projects integrated with Qatari ministries, delivering frontend features and Node.js services for both client‑ and bank‑side platforms.",
       "Responsible for the e2e JS/TS stack: internal libraries, shared component library and production UI components used across teams.",
@@ -41,7 +41,7 @@
   {
     "jobTitle": "Software Engineer Team Lead",
     "company": "Grand Parade - William Hill",
-    "startDate": "Jan 2024",
+    "startDate": "Feb 2024",
     "endDate": "Oct 2024",
     "descriptionEn": [
       "Led two cross-functional teams during product sunsetting and migration; work focused on payments, KYC and compliance.",
@@ -81,7 +81,7 @@
     "jobTitle": "Senior Frontend Engineer",
     "company": "Grand Parade - William Hill",
     "startDate": "Aug 2020",
-    "endDate": "Jan 2024",
+    "endDate": "Feb 2024",
     "descriptionEn": [
       "Led frontend design and implementation of the new payments system for “Mr Green”, a core company brand handling high-volume payment flows (>100,000 payment events/month).",
       "Maintained and enhanced integrations with third‑party providers for player identification, KYC and fraud detection; implemented robust client-side flows for document upload, verification feedback and retry handling.",
@@ -89,7 +89,7 @@
       "Owned the KYC user experience e2e: built progressive verification flows, clear UX for verification states, and error handling that reduced manual intervention and improved conversion for KYC checks."
     ],
     "descriptionBr": [
-      "Liderei o design frontend e a implementação do novo sistema de pagamentos para “Mr Green”, uma marca central da empresa que lida com fluxos de pagamento de alto volume (>100.000 eventos de pagamento/mês).",
+      "Liderei o design frontend e a implementação do novo sistema de pagamentos para “Mr Green”, uma marca central da empresa que lida com fluxos de pagamento de alto volume (>100,000 eventos de pagamento/mês).",
       "Mantive e melhorei integrações com provedores terceiros para identificação de jogadores, KYC e detecção de fraude; implementei fluxos robustos no cliente para upload de documentos, feedback de verificação e tratamento de retries.",
       "Assegurei o tratamento seguro e conforme da identificação de jogadores e transações: implementei fluxos de token seguros, validação de entrada e hardening no cliente para reduzir superfície de fraude e suportar requisitos regulatórios.",
       "Fui responsável pela experiência de usuário KYC end-to-end: construí fluxos de verificação progressiva, UX clara para estados de verificação e tratamento de erros que reduziram intervenção manual e melhoraram conversão nas checagens de KYC."
@@ -109,7 +109,8 @@
       "Jasmine",
       "Cypress",
       "Node.js",
-      "Express.js/Fastify",
+      "Express.js",
+      "Fastify",
       "MongoDB",
       "Splunk"
     ],
@@ -201,6 +202,129 @@
     ],
     "technologies": ["JavaScript", "React", "Redux", "Redux-Saga", "Material-UI", "Jest", "Enzyme"],
     "location": "São Paulo, Brazil, On-Site",
+    "type": "full-time"
+  },
+  {
+    "jobTitle": "Fullstack Engineer",
+    "company": "Lunes",
+    "startDate": "Apr 2018",
+    "endDate": "Feb 2019",
+    "descriptionEn": [
+      "Built web and mobile features for crypto/finance products using React and React Native (Expo), collaborating closely with designers and product owners to simplify complex user flows.",
+      "Delivered a cryptocurrency wallet (web and app) and integrated it with Node/Express APIs, MongoDB/Mongoose and Firebase services (auth/notifications).",
+      "Prototyped a real-time cryptocurrency exchange interface (order book and live price updates) using WebSocket streams; the project was not released.",
+      "Introduced Redux/Thunk architecture, shared UI components and testing practices (Jest, Enzyme); hosted weekly tech sessions for the team to share frontend practices and improve consistency.",
+      "Worked on error handling and input validation to improve reliability in transaction and account flows."
+    ],
+    "descriptionBr": [
+      "Desenvolvi funcionalidades web e mobile para produtos de cripto/finanças usando React e React Native (Expo), colaborando estreitamente com designers e product owners para simplificar fluxos de usuário complexos.",
+      "Entreguei uma carteira de criptomoedas (web e app) e a integrei com APIs Node/Express, MongoDB/Mongoose e serviços Firebase (auth/notifications).",
+      "Protótipo de interface de exchange de criptomoedas em tempo real (livro de ofertas e atualizações de preço ao vivo) usando streams WebSocket; o projeto não foi lançado.",
+      "Introduzi arquitetura Redux/Thunk, componentes UI compartilhados e práticas de testes (Jest, Enzyme); realizei sessões técnicas semanais para a equipe compartilhar práticas frontend e melhorar consistência.",
+      "Trabalhei em tratamento de erros e validação de entrada para melhorar confiabilidade em fluxos de transação e conta."
+    ],
+    "technologies": [
+      "JavaScript",
+      "React",
+      "React Native",
+      "Redux/Thunk",
+      "Expo",
+      "Styled-Components",
+      "Jest",
+      "Enzyme",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Firebase"
+    ],
+    "location": "São Paulo, Brazil",
+    "type": "full-time"
+  },
+  {
+    "jobTitle": "Fullstack Web Developer",
+    "company": "Freelancer",
+    "startDate": "Sep 2015",
+    "endDate": "Apr 2018",
+    "descriptionEn": [
+      "End-to-end ownership: ran discovery calls/workshops, scoped features, prepared estimates and statements of work, defined milestones, and managed delivery to agreed timelines.",
+      "Client management: single point of contact; gathered requirements, handled change requests, set priorities, and provided weekly status updates and clear handovers.",
+      "UX/UI collaboration: produced wireframes/prototypes (Adobe XD/Zeplin) and translated them into accessible, responsive interfaces (mobile‑first, semantic HTML/CSS).",
+      "Frontend development: built interactive sites and single‑page apps with JavaScript, jQuery, AngularJS and Angular 2+; structured components and reusable UI patterns.",
+      "Backend/CMS: implemented PHP backends (Laravel, Zend), designed SQL schemas (MySQL/SQL Server), and built/customised WordPress themes and plugins for content and e‑commerce use cases.",
+      "Integrations: connected sites to payment gateways, email marketing, CRM and analytics (events/goals), plus maps, social login and form processing.",
+      "SEO & performance: applied on‑page SEO (metadata, sitemaps, clean URLs), image optimisation and asset minification; set caching rules and reduced page weight to improve load times and Core Web Vitals.",
+      "Deployment & operations: set up hosting, domains and SSL; configured backups and basic uptime/error monitoring; used Git for version control and simple CI scripts for repeatable builds.",
+      "Analytics & optimisation: configured tracking (events, goals), analysed funnels and iterated content/layout to improve contact form and subscription conversions.",
+      "Documentation & handover: produced admin guides and developer notes; trained client teams and offered maintenance retainers for updates and security patches."
+    ],
+    "descriptionBr": [
+      "Responsabilidade end-to-end: conduzi discovery calls/workshops, delimitei funcionalidades, preparei estimativas e statements of work, defini marcos e gerenciei entregas conforme cronograma.",
+      "Gerência de clientes: ponto único de contato; coletei requisitos, tratei requests de mudança, defini prioridades e forneci updates semanais e entregas claras.",
+      "Colaboração UX/UI: produzi wireframes/protótipos (Adobe XD/Zeplin) e os traduzi em interfaces acessíveis e responsivas (mobile‑first, HTML/CSS semântico).",
+      "Desenvolvimento frontend: construí sites interativos e single‑page apps com JavaScript, jQuery, AngularJS e Angular 2+; estruturei componentes e padrões de UI reutilizáveis.",
+      "Backend/CMS: implementei backends PHP (Laravel, Zend), projetei schemas SQL (MySQL/SQL Server) e desenvolvi/ personalizei temas e plugins WordPress para conteúdo e e‑commerce.",
+      "Integrações: conectei sites a gateways de pagamento, ferramentas de email marketing, CRM e analytics (events/goals), além de mapas, social login e processamento de formulários.",
+      "SEO & performance: apliquei SEO on‑page (metadata, sitemaps, URLs limpas), otimização de imagens e minificação de assets; defini regras de cache e reduzi peso da página para melhorar tempos de carregamento e Core Web Vitals.",
+      "Deployment & operations: configurei hosting, domínios e SSL; configurei backups e monitoramento básico de uptime/erros; usei Git para versionamento e scripts CI simples para builds reprodutíveis.",
+      "Analytics & otimização: configurei rastreamento (events, goals), analisei funis e iterei conteúdos/layouts para melhorar conversões de formulários e inscrições.",
+      "Documentação & handover: produzi guias administrativos e notas para desenvolvedores; treinei equipes de clientes e ofereci contratos de manutenção para atualizações e patches de segurança."
+    ],
+    "technologies": [
+      "JavaScript",
+      "jQuery",
+      "AngularJS",
+      "Angular 2+",
+      "PHP 5/7",
+      "Laravel",
+      "Zend 2/3",
+      "Bootstrap",
+      "Sass/Less",
+      "SQL",
+      "MySQL",
+      "SQL Server",
+      "WordPress (themes/plugins)",
+      "Adobe XD",
+      "Zeplin",
+      "Photoshop"
+    ],
+    "location": "",
+    "type": "freelance"
+  },
+  {
+    "jobTitle": "IT Analyst",
+    "company": "Fremix Pavimentação de Construção",
+    "startDate": "Jun 2015",
+    "endDate": "Sep 2017",
+    "descriptionEn": [
+      "Managed core IT infrastructure and provided technical support for construction project management systems.",
+      "Administered servers and enterprise systems: Windows Server 2008/2012, Linux servers, ERP TOTVS, Microsoft SQL Server, Microsoft Exchange and Active Directory.",
+      "Maintained and secured the network (routing, switching, VPNs, firewalls); monitored performance and resolved incidents.",
+      "Led the design and rollout of the company intranet on WordPress to improve internal communications and document sharing.",
+      "Oversaw telephony and mobile estates (landlines and mobiles) and coordinated vendor management and procurement; negotiated contracts to achieve cost savings.",
+      "Implemented backup and recovery routines and standardised patch/update processes to improve availability and stability."
+    ],
+    "descriptionBr": [
+      "Gerenciei infraestrutura de TI e forneci suporte técnico para sistemas de gerenciamento de projetos de construção.",
+      "Administrei servidores e sistemas empresariais: Windows Server 2008/2012, servidores Linux, ERP TOTVS, Microsoft SQL Server, Microsoft Exchange e Active Directory.",
+      "Mantive e protegi a rede (routing, switching, VPNs, firewalls); monitorei desempenho e resolvi incidentes.",
+      "Liderei o design e implantação da intranet da empresa em WordPress para melhorar comunicação interna e compartilhamento de documentos.",
+      "Supervisionei telefonia e dispositivos móveis (fixos e celulares) e coordenei gestão de fornecedores e compras; negociei contratos para obter economia de custos.",
+      "Implementei rotinas de backup e recuperação e padronizei processos de patch/update para melhorar disponibilidade e estabilidade."
+    ],
+    "technologies": [
+      "Windows Server 2008/2012",
+      "Linux",
+      "ERP TOTVS",
+      "Microsoft SQL Server",
+      "Microsoft Exchange",
+      "Active Directory",
+      "Networking (routing/switching/VPN)",
+      "Firewalls",
+      "WordPress",
+      "Backup/DR tools"
+    ],
+    "location": "São Paulo, Brazil",
     "type": "full-time"
   }
 ]

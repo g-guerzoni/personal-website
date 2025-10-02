@@ -7,6 +7,7 @@
   --highlight: #50fa7b;
   --text: #f8f8f2;
   --accent: #8be9fd;
+  --transition-duration: 0.3s;
 }
 
 @theme inline {
@@ -25,7 +26,7 @@ body {
 }
 
 a {
-  transition: color 0.2s ease-in-out;
+  transition: color var(--transition-duration) ease-in-out;
 }
 
 a:hover {
@@ -33,7 +34,7 @@ a:hover {
 }
 
 a img {
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity var(--transition-duration) ease-in-out;
 }
 
 a:hover img {
@@ -52,5 +53,40 @@ a:hover img {
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.3s ease-in-out forwards;
+  animation: fadeIn var(--transition-duration) ease-in-out forwards;
+}
+
+.custom-scrollbar {
+  padding-right: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color var(--transition-duration) ease-in-out;
+}
+
+.custom-scrollbar:hover {
+  scrollbar-color: var(--primary) transparent;
+}
+
+@supports selector(::-webkit-scrollbar) {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 4px;
+    transition: background var(--transition-duration) ease-in-out;
+  }
+
+  .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+    background: var(--primary);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+  }
 }

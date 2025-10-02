@@ -1,13 +1,15 @@
 import React from "react";
 
+import { Nullable } from "@/types/global";
 import { ITimeline } from "@/types/timeline";
 
-interface JobTitleItemProps {
+interface JobListProps {
   items: ITimeline[];
   onSelectItem: (item: ITimeline) => void;
+  selectedItem: Nullable<ITimeline>;
 }
 
-const JobTitleItem: React.FC<JobTitleItemProps> = ({ items, onSelectItem }) => {
+const JobList: React.FC<JobListProps> = ({ items, onSelectItem, selectedItem }) => {
   const handleSelectItem = (item: ITimeline) => {
     onSelectItem(item);
   };
@@ -17,8 +19,8 @@ const JobTitleItem: React.FC<JobTitleItemProps> = ({ items, onSelectItem }) => {
       {items.map((item, index) => (
         <li
           key={`${item.company}-${item.jobTitle}`}
-          className="group grid grid-cols-1 justify-start transition-all duration-200 ease-in-out lg:grid-cols-[68px_40px_1fr]"
-          onMouseEnter={() => handleSelectItem(item)}
+          className="group grid grid-cols-1 justify-start transition-all duration-200 ease-in-out lg:cursor-pointer lg:grid-cols-[68px_40px_1fr]"
+          onClick={() => handleSelectItem(item)}
         >
           <div className="flex items-center justify-start gap-2 lg:-mt-1 lg:flex-col lg:items-start lg:justify-start">
             <time className="text-sm" dateTime={item.endDate || new Date().toISOString().split("T")[0]}>
@@ -33,7 +35,7 @@ const JobTitleItem: React.FC<JobTitleItemProps> = ({ items, onSelectItem }) => {
           <div className="hidden lg:block" aria-hidden="true">
             <div className="flex-col items-center justify-items-center">
               <div
-                className={`${index === 0 ? "bg-highlight" : "bg-text"} group-hover:bg-primary h-4 w-4 rounded-full transition-colors duration-200 ease-in-out`}
+                className={`${selectedItem === item ? "bg-primary" : index === 0 ? "bg-highlight" : "bg-text"} group-hover:bg-primary h-4 w-4 rounded-full transition-colors duration-200 ease-in-out`}
               />
               <div className={`bg-secondary h-[60px] w-1 ${index === items.length - 1 ? "hidden" : ""}`} />
             </div>
@@ -61,4 +63,4 @@ const JobTitleItem: React.FC<JobTitleItemProps> = ({ items, onSelectItem }) => {
   );
 };
 
-export default JobTitleItem;
+export default JobList;

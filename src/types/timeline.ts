@@ -1,8 +1,10 @@
+import { Nullable } from "./global";
+
 export interface ITimeline {
   jobTitle: string;
   company: string;
   startDate: string;
-  endDate: string;
+  endDate: Nullable<string>;
   descriptionEn: string[];
   descriptionBr: string[];
   technologies: string[];
