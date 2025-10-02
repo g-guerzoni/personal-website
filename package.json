@@ -1,8 +1,12 @@
 {
-  "name": "portfolio",
+  "name": "personal-website",
   "version": "1.0.0",
-  "description": "Guilherme Guerzoni - Senior Full Stack Engineer - Portfolio",
+  "description": "Guilherme Guerzoni - Senior Full Stack Engineer - Personal Website",
   "author": "Guilherme Guerzoni <guerzoni.guilherme@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/g-guerzoni/personal-website"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack --port 3005",

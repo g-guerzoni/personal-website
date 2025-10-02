@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Guilherme Guerzoni - Senior Full Stack Engineer",
     description:
       "Guilherme Guerzoni is a Senior Full Stack Engineer with over 9 years of experience. Bachelor in Computer Science specializing in modern web technologies.",
-    siteName: "Guilherme Guerzoni Portfolio",
+    siteName: "Guilherme Guerzoni Personal Website",
   },
   robots: {
     index: true,

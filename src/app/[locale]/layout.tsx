@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: "Guilherme Guerzoni - Senior Frontend Engineer",
     description:
       "Senior Frontend Engineer with 10+ years of experience building scalable web applications and banking platforms.",
-    siteName: "Guilherme Guerzoni Portfolio",
+    siteName: "Guilherme Guerzoni Personal Website",
   },
   twitter: {
     card: "summary_large_image",
