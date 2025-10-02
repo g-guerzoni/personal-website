@@ -7,7 +7,7 @@
     "exploreWork": "Explore my work"
   },
   "sections": {
-    "projects": "Projects",
+    "projects": "Projects (WIP)",
     "timeline": "Timeline"
   },
   "social": {
@@ -15,6 +15,8 @@
     "linkedin": "LinkedIn profile"
   },
   "nav": {
-    "languageSelection": "Language selection"
+    "languageSelection": "Language selection",
+    "en": "EN",
+    "pt": "PT"
   }
 }

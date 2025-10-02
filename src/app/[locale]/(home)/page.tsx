@@ -1,10 +1,13 @@
 import { useLocale, useTranslations } from "next-intl";
 
 import Profile from "@/components/profile/profile";
+import Projects from "@/components/projects/projects";
 import Section from "@/components/section/section";
 import Timeline from "@/components/timeline/timeline";
-import timeline from "@/data/timeline.json";
+import PROJECTS from "@/data/projects.json";
+import TIMELINE from "@/data/timeline.json";
 import { Link } from "@/i18n/routing";
+import { Project } from "@/types/projects";
 import { ITimeline } from "@/types/timeline";
 
 export default function Home() {
@@ -19,19 +22,19 @@ export default function Home() {
             href="/"
             locale="en"
             lang="en"
-            className={`focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background ${locale === "en" ? "text-accent" : ""}`}
+            className={`focus:ring-primary focus:ring-offset-background focus:ring-2 focus:ring-offset-2 focus:outline-none ${locale === "en" ? "text-accent" : ""}`}
             aria-current={locale === "en" ? "page" : undefined}
           >
-            EN
+            {t("nav.en")}
           </Link>
           <Link
             href="/"
             locale="pt"
             lang="pt"
-            className={`focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background ${locale === "pt" ? "text-accent" : ""}`}
+            className={`focus:ring-primary focus:ring-offset-background focus:ring-2 focus:ring-offset-2 focus:outline-none ${locale === "pt" ? "text-accent" : ""}`}
             aria-current={locale === "pt" ? "page" : undefined}
           >
-            PT
+            {t("nav.pt")}
           </Link>
         </nav>
       </header>
@@ -40,13 +43,11 @@ export default function Home() {
         <Profile />
 
         <Section title={t("sections.projects")}>
-          <div className="flex items-center justify-center">
-            <span className="text-secondary text-5xl font-bold">Working on it...</span>
-          </div>
+          <Projects projects={PROJECTS as Project[]} />
         </Section>
 
         <Section title={t("sections.timeline")}>
-          <Timeline items={timeline as ITimeline[]} />
+          <Timeline items={TIMELINE as ITimeline[]} />
         </Section>
       </div>
     </main>

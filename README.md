@@ -2,24 +2,29 @@
 
 A modern, accessible personal website showcasing professional experience and technical expertise.
 
+Live version: https://guerzoni.dev
+
 ## Design Process
 
 I started by sketching a wireframe using Excalidraw as a handy tool to quickly explore different layout ideas and user flows. After discarding some options and settling on a concept, I jumped into Figma to create a mock version to see how this would actually look with real colors, typography, and spacing.
 
 ### Wireframe
+
 Initial wireframe created in Excalidraw:
 
 ![Wireframe](public/assets/doc/wireframe.png)
 
 ### Figma Design
-High-fidelity mock created in Figma:
+
+Mock created in Figma:
+
+During implementation, I experimented with different ideas. Some worked, some didn't, and the design evolved as I built it.
 
 ![Figma Design](public/assets/doc/figma.png)
 
-During implementation, I experimented with different ideas. Some worked, some didn't, and the design evolved as I built it. You can check the final result at [guerzoni.dev](https://guerzoni.dev).
-
 ## Features
 
+- My public projects listing
 - Professional experience timeline with interactive job selection
 - Typing animation effect for dynamic title display
 - Internationalization support (English and Portuguese)
@@ -35,15 +40,18 @@ During implementation, I experimented with different ideas. Some worked, some di
 - Tailwind CSS 4
 - next-intl for internationalization
 - Vercel Analytics
+- Husky with pre-commit checks
 
 ## Getting Started
 
 Install dependencies:
+
 ```bash
 npm install
 ```
 
 Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -51,6 +59,7 @@ npm run dev
 The application will start on http://localhost:3005.
 
 Build for production:
+
 ```bash
 npm run build
 npm start
@@ -68,6 +77,7 @@ npm start
 ## Author
 
 Guilherme Guerzoni
+
 Website: https://guerzoni.dev
 
 GitHub: https://github.com/g-guerzoni

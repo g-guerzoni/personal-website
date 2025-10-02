@@ -14,3 +14,8 @@ export const JOB_TITLES = [
   "Web Developer",
   "Typescript/Javascript Specialist",
 ];
+
+export const SOCIAL_MEDIA = {
+  GITHUB: "https://github.com/g-guerzoni",
+  LINKEDIN: "https://www.linkedin.com/in/guilherme-guerzoni",
+} as const;

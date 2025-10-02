@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Personal Website",
+    "descriptionEn": "A modern, accessible personal website showcasing professional experience and technical expertise. Features interactive timeline, typing animations, and full internationalization support.",
+    "descriptionBr": "Um site pessoal moderno e acessível que apresenta experiência profissional e expertise técnica. Possui linha do tempo interativa, animações de digitação e suporte completo à internacionalização.",
+    "demoUrl": "https://guerzoni.dev",
+    "githubUrl": "https://github.com/g-guerzoni/personal-website",
+    "technologies": ["TypeScript", "React", "Next.js", "Tailwind CSS", "ESLint", "Prettier"]
+  }
+]

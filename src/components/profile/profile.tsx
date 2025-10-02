@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 import { useTypingEffect } from "@/hooks/useTypingEffect";
 import { Link } from "@/i18n/routing";
-import { JOB_TITLES } from "@/types/constants";
+import { JOB_TITLES, SOCIAL_MEDIA } from "@/types/constants";
 
 export default function Profile() {
   const t = useTranslations();
@@ -35,7 +35,7 @@ export default function Profile() {
 
           <nav className="mt-2 flex justify-center gap-4 md:justify-start" aria-label="Social media links">
             <Link
-              href="https://github.com/g-guerzoni"
+              href={SOCIAL_MEDIA.GITHUB}
               className="h-8 w-8 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
               aria-label={t("social.github")}
               target="_blank"
@@ -44,7 +44,7 @@ export default function Profile() {
               <Image src="/assets/icons/github.svg" alt="" width={32} height={32} />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/guilherme-guerzoni"
+              href={SOCIAL_MEDIA.LINKEDIN}
               className="h-8 w-8 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
               aria-label={t("social.linkedin")}
               target="_blank"
