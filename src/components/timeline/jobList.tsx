@@ -19,8 +19,18 @@ const JobList: React.FC<JobListProps> = ({ items, onSelectItem, selectedItem }) 
       {items.map((item, index) => (
         <li
           key={`${item.company}-${item.jobTitle}`}
-          className="group grid grid-cols-1 justify-start transition-all duration-200 ease-in-out lg:cursor-pointer lg:grid-cols-[68px_40px_1fr]"
+          className="group grid grid-cols-1 justify-start outline-none transition-all duration-200 ease-in-out focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background lg:cursor-pointer lg:grid-cols-[68px_40px_1fr]"
           onClick={() => handleSelectItem(item)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              handleSelectItem(item);
+            }
+          }}
+          tabIndex={0}
+          role="button"
+          aria-pressed={selectedItem === item}
+          aria-label={`View details for ${item.jobTitle} at ${item.company}`}
         >
           <div className="flex items-center justify-start gap-2 lg:-mt-1 lg:flex-col lg:items-start lg:justify-start">
             <time className="text-sm" dateTime={item.endDate || new Date().toISOString().split("T")[0]}>

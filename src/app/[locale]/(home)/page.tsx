@@ -12,13 +12,25 @@ export default function Home() {
   const locale = useLocale();
 
   return (
-    <main className="mx-auto max-w-screen-lg">
+    <main id="main-content" className="mx-auto max-w-screen-lg">
       <header className="text-md h-12 w-full font-bold uppercase">
         <nav aria-label={t("nav.languageSelection")} className="flex justify-end gap-2">
-          <Link href="/" locale="en" lang="en" className={locale === "en" ? "text-accent" : ""}>
+          <Link
+            href="/"
+            locale="en"
+            lang="en"
+            className={`focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background ${locale === "en" ? "text-accent" : ""}`}
+            aria-current={locale === "en" ? "page" : undefined}
+          >
             EN
           </Link>
-          <Link href="/" locale="pt" lang="pt" className={locale === "pt" ? "text-accent" : ""}>
+          <Link
+            href="/"
+            locale="pt"
+            lang="pt"
+            className={`focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background ${locale === "pt" ? "text-accent" : ""}`}
+            aria-current={locale === "pt" ? "page" : undefined}
+          >
             PT
           </Link>
         </nav>

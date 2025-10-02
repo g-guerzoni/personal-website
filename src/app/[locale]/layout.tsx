@@ -103,8 +103,14 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} dir="ltr">
       <body className={`${robotoMono.variable} p-8 font-mono antialiased`}>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-primary focus:px-4 focus:py-2 focus:text-background focus:outline-none focus:ring-2 focus:ring-accent"
+        >
+          Skip to main content
+        </a>
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
         <Analytics />
       </body>
