@@ -68,6 +68,6 @@ npm start
 ## Author
 
 Guilherme Guerzoni
-Email: guerzoni.guilherme@gmail.com
 Website: https://guerzoni.dev
+
 GitHub: https://github.com/g-guerzoni
