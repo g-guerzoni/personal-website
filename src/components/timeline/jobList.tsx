@@ -36,7 +36,7 @@ const JobList: React.FC<JobListProps> = ({ items, onSelectItem, selectedItem }) 
             <time className="text-sm" dateTime={item.endDate || new Date().toISOString().split("T")[0]}>
               {item.endDate || "Current"}
             </time>
-            <div className="bg-secondary block h-1 w-1 lg:mt-2 lg:hidden" aria-hidden="true" />
+            <div className="bg-secondary block h-1 w-1 rounded-full lg:mt-2 lg:hidden" aria-hidden="true" />
             <time className="text-sm" dateTime={item.startDate}>
               {item.startDate}
             </time>
@@ -55,13 +55,13 @@ const JobList: React.FC<JobListProps> = ({ items, onSelectItem, selectedItem }) 
             <h3 className="text-highlight lg:text-text text-base font-bold">{item.company}</h3>
             <p className="text-accent text-sm font-semibold">{item.jobTitle}</p>
 
-            <div className="mb-4 flex items-center gap-2 lg:mb-0">
+            <div className="mb-4 flex items-center gap-2">
               {item.location && (
                 <address className="text-xs not-italic" aria-label="Work location">
                   {item.location}
                 </address>
               )}
-              {item.location && <div className="bg-secondary h-1 w-1" aria-hidden="true" />}
+              {item.location && <div className="bg-secondary h-1 w-1 rounded-full" aria-hidden="true" />}
               <span className="text-xs capitalize" aria-label="Employment type">
                 {item.type}
               </span>
