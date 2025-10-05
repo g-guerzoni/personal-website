@@ -37,11 +37,11 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({ project, isExpanded, onTo
             {project.technologies.map((technology) => (
               <div key={technology} role="listitem">
                 <Image
-                  className="h-8 w-8 brightness-0 invert"
+                  className="h-7 w-7 brightness-0 invert"
                   src={`https://simpleicons.org/icons/${normalizeString(technology)}.svg`}
                   alt={`${technology} logo`}
-                  width={14}
-                  height={14}
+                  width={28}
+                  height={28}
                 />
               </div>
             ))}
