@@ -1,10 +1,17 @@
 [
   {
     "name": "Personal Website",
-    "descriptionEn": "A modern, accessible personal website showcasing professional experience and technical expertise. Features interactive timeline, typing animations, and full internationalization support.",
-    "descriptionBr": "Um site pessoal moderno e acessível que apresenta experiência profissional e expertise técnica. Possui linha do tempo interativa, animações de digitação e suporte completo à internacionalização.",
+    "descriptionEn": "A modern, accessible personal website that highlights professional experience and technical skills. Includes an interactive timeline, typing animations, and full internationalization support.",
+    "descriptionBr": "Um site pessoal moderno e acessível que destaca a experiência profissional e as competências técnicas. Inclui uma linha do tempo interativa, animações de digitação e suporte completo à internacionalização.",
     "demoUrl": "https://guerzoni.dev",
     "githubUrl": "https://github.com/g-guerzoni/personal-website",
     "technologies": ["TypeScript", "React", "Next.js", "Tailwind CSS", "ESLint", "Prettier"]
+  },
+  {
+    "name": "Audio Recorder with Transcription and R2 Storage (POC)",
+    "descriptionEn": "An Electron desktop app for recording audio, integrated with Cloudflare R2 for storage and automated transcription. It shows real-time progress, stores recordings in the cloud, and converts audio to text using OpenAI's Whisper via a Cloudflare Worker.",
+    "descriptionBr": "Um aplicativo desktop em Electron para gravação de áudio, integrado ao Cloudflare R2 para armazenamento e à transcrição automática. Exibe progresso em tempo real, armazena as gravações na nuvem e converte áudio em texto com o modelo Whisper da OpenAI via um Cloudflare Worker.",
+    "githubUrl": "https://github.com/g-guerzoni/poc-audio-recorder-transcription-r2",
+    "technologies": ["TypeScript", "Electron", "Cloudflare", "Cloudflare Workers", "OpenAI"]
   }
 ]

@@ -28,15 +28,17 @@ export default function Profile() {
           <h1 className="text-primary text-3xl font-bold">{t("profile.name")}</h1>
           <p className="text-highlight text-xl" aria-live="polite" aria-atomic="true">
             {typedText}
-            <span className="inline-block animate-blink" aria-hidden="true">|</span>
+            <span className="animate-blink inline-block" aria-hidden="true">
+              |
+            </span>
           </p>
           <p className="text-lg">{t("profile.education")}</p>
-          <p className="text-lg text-accent">{t("profile.experience")}</p>
+          <p className="text-accent text-lg">{t("profile.experience")}</p>
 
           <nav className="mt-2 flex justify-center gap-4 md:justify-start" aria-label="Social media links">
             <Link
               href={SOCIAL_MEDIA.GITHUB}
-              className="h-8 w-8 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
+              className="focus:ring-primary focus:ring-offset-background h-8 w-8 focus:ring-2 focus:ring-offset-2 focus:outline-none"
               aria-label={t("social.github")}
               target="_blank"
               rel="noopener noreferrer"
@@ -45,7 +47,7 @@ export default function Profile() {
             </Link>
             <Link
               href={SOCIAL_MEDIA.LINKEDIN}
-              className="h-8 w-8 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
+              className="focus:ring-primary focus:ring-offset-background h-8 w-8 focus:ring-2 focus:ring-offset-2 focus:outline-none"
               aria-label={t("social.linkedin")}
               target="_blank"
               rel="noopener noreferrer"

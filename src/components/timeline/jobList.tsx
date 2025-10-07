@@ -19,7 +19,7 @@ const JobList: React.FC<JobListProps> = ({ items, onSelectItem, selectedItem }) 
       {items.map((item, index) => (
         <li
           key={`${item.company}-${item.jobTitle}`}
-          className="group grid grid-cols-1 justify-start outline-none transition-all duration-200 ease-in-out focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background lg:cursor-pointer lg:grid-cols-[68px_40px_1fr]"
+          className="group focus-visible:ring-primary focus-visible:ring-offset-background grid grid-cols-1 justify-start transition-all duration-200 ease-in-out outline-none focus-visible:ring-2 focus-visible:ring-offset-2 lg:cursor-pointer lg:grid-cols-[68px_40px_1fr]"
           onClick={() => handleSelectItem(item)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {

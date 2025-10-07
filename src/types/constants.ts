@@ -6,7 +6,6 @@ export const BREAKPOINTS = {
   "2XL": 1536,
 } as const;
 
-
 export const JOB_TITLES = [
   "Senior Frontend Engineer",
   "Senior Backend Engineer",

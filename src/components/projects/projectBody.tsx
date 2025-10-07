@@ -17,35 +17,35 @@ const ProjectBody: React.FC<ProjectBodyProps> = ({ project, description, isExpan
         isExpanded ? "max-h-96" : "max-h-0"
       }`}
     >
-      <div className="p-4">
-      <h3 className="text-secondary text-lg font-bold">{project.name}</h3>
-      <p className="text-secondary text-sm">{description}</p>
+      <div className="flex flex-col gap-2 p-4">
+        <h3 className="text-secondary text-lg font-bold">{project.name}</h3>
+        <p className="text-secondary text-sm">{description}</p>
 
-      {project.demoUrl && (
-        <div className="mt-2">
-          <span className="text-secondary text-sm font-semibold">Live demo: </span>
-          <Link
-            href={project.demoUrl}
-            className="text-secondary focus-visible:ring-primary focus-visible:ring-offset-text hover:!text-secondary text-sm underline outline-none hover:font-semibold focus-visible:ring-2 focus-visible:ring-offset-2"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`View live demo of ${project.name}`}
-          >
-            {project.demoUrl}
-          </Link>
-        </div>
-      )}
+        {project.demoUrl && (
+          <div>
+            <span className="text-secondary text-sm font-semibold">Live demo: </span>
+            <Link
+              href={project.demoUrl}
+              className="text-secondary focus-visible:ring-primary focus-visible:ring-offset-text hover:!text-secondary text-sm underline outline-none hover:font-semibold focus-visible:ring-2 focus-visible:ring-offset-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View live demo of ${project.name}`}
+            >
+              {project.demoUrl}
+            </Link>
+          </div>
+        )}
 
-      {project.technologies.length > 0 && (
-        <div className="mt-2">
-          <span className="text-secondary text-sm font-semibold">Technologies: </span>
-          <ul className="text-secondary ml-4 list-disc text-sm" aria-label="Technologies used in this project">
-            {project.technologies.map((technology) => (
-              <li key={technology}>{technology}</li>
-            ))}
-          </ul>
-        </div>
-      )}
+        {project.technologies.length > 0 && (
+          <div>
+            <span className="text-secondary text-sm font-semibold">Technologies: </span>
+            <ul className="text-secondary ml-4 list-disc text-sm" aria-label="Technologies used in this project">
+              {project.technologies.map((technology) => (
+                <li key={technology}>{technology}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );

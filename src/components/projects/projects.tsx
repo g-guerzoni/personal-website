@@ -39,7 +39,11 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
               isExpanded={expandedProjects[project.name]}
               onToggle={() => toggleProject(project.name)}
             />
-            <ProjectBody project={project} description={getDescription(project)} isExpanded={expandedProjects[project.name]} />
+            <ProjectBody
+              project={project}
+              description={getDescription(project)}
+              isExpanded={expandedProjects[project.name]}
+            />
           </article>
         ))}
       </div>
@@ -51,7 +55,11 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
               isExpanded={expandedProjects[project.name]}
               onToggle={() => toggleProject(project.name)}
             />
-            <ProjectBody project={project} description={getDescription(project)} isExpanded={expandedProjects[project.name]} />
+            <ProjectBody
+              project={project}
+              description={getDescription(project)}
+              isExpanded={expandedProjects[project.name]}
+            />
           </article>
         ))}
       </div>

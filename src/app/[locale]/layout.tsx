@@ -1,8 +1,8 @@
 import { Roboto_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 
-import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
@@ -107,7 +107,7 @@ export default async function LocaleLayout({
       <body className={`${robotoMono.variable} p-8 font-mono antialiased`}>
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-primary focus:px-4 focus:py-2 focus:text-background focus:outline-none focus:ring-2 focus:ring-accent"
+          className="focus:bg-primary focus:text-background focus:ring-accent sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded focus:px-4 focus:py-2 focus:ring-2 focus:outline-none"
         >
           Skip to main content
         </a>

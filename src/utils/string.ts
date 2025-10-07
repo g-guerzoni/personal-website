@@ -6,11 +6,11 @@
 export function normalizeString(str: string): string {
   // Hash mapping for special character replacements
   const characterMap: Record<string, string> = {
-    '.': 'dot',
-    '#': 'sharp',
-    '+': 'plus',
-    '@': 'at',
-    '-': 'dash'
+    ".": "dot",
+    "#": "sharp",
+    "+": "plus",
+    "@": "at",
+    "-": "dash",
   };
 
   return str
