@@ -15,7 +15,7 @@
     "technologies": ["TypeScript", "Electron", "Cloudflare", "Cloudflare Workers", "OpenAI"]
   },
   {
-    "name": "Message Enhancer Chrome Extension",
+    "name": "AI Message Enhancer Chrome Extension",
     "descriptionEn": "A Chrome extension that improves, corrects, and polishes your text using OpenAI's GPT-4.1 Nano API. Fix typos, clarify meaning, adjust tone, and refine writing for Slack, Teams, email, or any web text input. Includes a Grammarly-like one-click correction integrated directly into text fields.",
     "descriptionBr": "Uma extensão do Chrome que melhora, corrige e aperfeiçoa seu texto usando a API GPT-4.1 Nano da OpenAI. Corrige erros de digitação, deixa a mensagem mais clara, ajusta o tom e aperfeiçoa textos para Slack, Teams, email ou qualquer campo de texto na web. Inclui integração no estilo Grammarly com correção em um clique diretamente nos campos de entrada.",
     "githubUrl": "https://github.com/g-guerzoni/chrome-extension-messages-enhancer",
