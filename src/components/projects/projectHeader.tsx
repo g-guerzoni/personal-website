@@ -16,10 +16,11 @@ interface ProjectHeaderProps {
 const ProjectHeader: React.FC<ProjectHeaderProps> = ({ project, isExpanded, onToggle }) => {
   return (
     <header
-      className={`bg-secondary cursor-pointer transition-all duration-300 ${isExpanded ? "rounded-t-md" : "rounded-md"} hover:bg-secondary/80`}
+      className={`flex flex-col gap-4 bg-secondary cursor-pointer p-4 transition-all duration-300 ${isExpanded ? "rounded-t-md" : "rounded-md"} hover:bg-secondary/80`}
       onClick={onToggle}
     >
-      <div className="flex items-center justify-between p-4">
+      <h3 className="text-text text-lg font-bold">{project.name}</h3>
+      <div className="flex items-center justify-between">
         <div
           className="focus-visible:ring-primary focus-visible:ring-offset-secondary flex flex-1 items-center gap-3 outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
           role="button"

@@ -18,7 +18,6 @@ const ProjectBody: React.FC<ProjectBodyProps> = ({ project, description, isExpan
       }`}
     >
       <div className="flex flex-col gap-2 p-4">
-        <h3 className="text-secondary text-lg font-bold">{project.name}</h3>
         <p className="text-secondary text-sm">{description}</p>
 
         {project.demoUrl && (
