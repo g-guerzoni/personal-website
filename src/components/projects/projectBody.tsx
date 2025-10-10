@@ -21,11 +21,11 @@ const ProjectBody: React.FC<ProjectBodyProps> = ({ project, description, isExpan
         <p className="text-secondary text-sm">{description}</p>
 
         {project.demoUrl && (
-          <div>
-            <span className="text-secondary text-sm font-semibold">Live demo: </span>
+          <div className="flex items-start gap-1 overflow-hidden">
+            <span className="text-secondary shrink-0 text-sm font-semibold">Live demo: </span>
             <Link
               href={project.demoUrl}
-              className="text-secondary focus-visible:ring-primary focus-visible:ring-offset-text hover:!text-secondary text-sm underline outline-none hover:font-semibold focus-visible:ring-2 focus-visible:ring-offset-2"
+              className="text-secondary focus-visible:ring-primary focus-visible:ring-offset-text hover:!text-secondary min-w-0 truncate text-sm underline outline-none hover:font-semibold focus-visible:ring-2 focus-visible:ring-offset-2"
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`View live demo of ${project.name}`}

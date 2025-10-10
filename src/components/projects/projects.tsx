@@ -31,7 +31,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row md:items-start">
-      <div className="flex flex-1 flex-col gap-4" role="list" aria-label="Projects - Column 1">
+      <div className="flex flex-1 flex-col gap-4 md:w-1/2" role="list" aria-label="Projects - Column 1">
         {leftProjects.map((project) => (
           <article key={project.name} className="w-full rounded-md" role="listitem">
             <ProjectHeader
@@ -47,7 +47,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           </article>
         ))}
       </div>
-      <div className="flex flex-1 flex-col gap-4" role="list" aria-label="Projects - Column 2">
+      <div className="flex flex-1 flex-col gap-4 md:w-1/2" role="list" aria-label="Projects - Column 2">
         {rightProjects.map((project) => (
           <article key={project.name} className="w-full rounded-md" role="listitem">
             <ProjectHeader
