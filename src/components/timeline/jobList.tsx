@@ -34,7 +34,7 @@ const JobList: React.FC<JobListProps> = ({ items, onSelectItem, selectedItem }) 
         >
           <div className="flex items-center justify-start gap-2 lg:-mt-1 lg:flex-col lg:items-start lg:justify-start">
             <time className="text-sm" dateTime={item.endDate || new Date().toISOString().split("T")[0]}>
-              {item.endDate || "Current"}
+              {item.endDate || "Present"}
             </time>
             <div className="bg-secondary block h-1 w-1 rounded-full lg:mt-2 lg:hidden" aria-hidden="true" />
             <time className="text-sm" dateTime={item.startDate}>
