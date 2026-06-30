@@ -5,7 +5,8 @@ import Link from "next/link";
 
 import { SOCIAL_MEDIA } from "@/types/constants";
 import { Project } from "@/types/projects";
-import { normalizeString } from "@/utils/string";
+
+import TechIcon from "./techIcon";
 
 interface ProjectHeaderProps {
   project: Project;
@@ -37,13 +38,7 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({ project, isExpanded, onTo
           <div className="flex items-center gap-3" role="list" aria-label="Technologies used">
             {project.technologies.map((technology) => (
               <div key={technology} role="listitem">
-                <Image
-                  className="h-7 w-7 brightness-0 invert"
-                  src={`https://simpleicons.org/icons/${normalizeString(technology)}.svg`}
-                  alt={`${technology} logo`}
-                  width={28}
-                  height={28}
-                />
+                <TechIcon technology={technology} />
               </div>
             ))}
           </div>
